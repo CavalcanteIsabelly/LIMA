@@ -1,0 +1,7 @@
+xml 
+
+<?mxl version="1.0" encoding="UTF-8"?>
+<produtos>
+    <nome_produto>Notebook</nome_produto>
+    <preco>4500</preco>
+</produtos>

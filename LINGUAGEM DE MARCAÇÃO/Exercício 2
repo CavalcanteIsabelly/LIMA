@@ -1,0 +1,7 @@
+xml 
+
+<xml version="1.0" encoding="UTF-8"?>
+<aluno matrícula="202501" curso="Informática">
+    <nome>João Silva</nome>
+    <idade>20</idade>idade>
+</aluno>
