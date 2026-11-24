@@ -1,0 +1,116 @@
+/* Configurações Gerais e Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; /* Rolagem suave ao clicar no índice */
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Fonte do Google Fonts */
+    background-color: #ffe4ec; /* Rosa claro suave */
+    color: #3d2c35;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(135deg, #c94b7c, #8e2450);
+    color: #ffffff;
+    text-align: center;
+    padding: 3rem 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif; /* Fonte destaque do Google Fonts */
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header .subtitulo {
+    font-size: 1.1rem;
+    font-weight: 300;
+    opacity: 0.95;
+}
+
+/* Container Principal */
+main {
+    max-width: 850px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+/* Estilo padrão das Seções (Cards) */
+section {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 1.8rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 12px rgba(142, 36, 80, 0.08);
+    border-left: 6px solid #c94b7c;
+}
+
+section h2 {
+    font-family: 'Playfair Display', serif;
+    color: #8e2450;
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+}
+
+section p {
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+}
+
+section p:last-child {
+    margin-bottom: 0;
+}
+
+/* Estilização do Índice */
+.indice ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.indice li a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #fce4ec;
+    color: #8e2450;
+    font-weight: 600;
+    padding: 0.6rem 1.2rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.indice li a:hover {
+    background-color: #c94b7c;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* Efeito suave nos cards de instrumentos */
+.card-instrumento {
+    transition: transform 0.2s ease;
+}
+
+.card-instrumento:hover {
+    transform: translateX(5px);
+}
+
+/* Rodapé */
+footer {
+    background-color: #8e2450;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
