@@ -1,0 +1,56 @@
+/* Estilo básico da página com fundo verde claro */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8f5e9;
+    margin: 20px;
+}
+
+h1 {
+    color: #1b4332;
+    text-align: center;
+}
+
+h2 {
+    color: #2e6f40;
+}
+
+/* Estilo das listas */
+ul, ol {
+    background-color: #ffffff;
+    padding: 15px 35px;
+    border: 1px solid #b7e4c7;
+}
+
+dl {
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #b7e4c7;
+}
+
+dt {
+    font-weight: bold;
+    color: #1b4332;
+}
+
+dd {
+    margin-bottom: 10px;
+}
+
+/* Estilo das tabelas */
+table {
+    background-color: #ffffff;
+    border-collapse: collapse;
+}
+
+th {
+    color: #ffffff;
+}
+
+/* Uso de imagem de fundo em célula da tabela (exigido no enunciado) */
+.fundo-promo {
+    background-image: url("img/bola.jpg");
+    background-size: 40px;
+    background-repeat: repeat;
+    background-color: #d8f3dc;
+    color: #000000;
+}

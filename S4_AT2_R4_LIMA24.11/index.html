@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Loja de Esportes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Catálogo - Loja de Artigos Esportivos</h1>
+    <p>
+    <hr>
+
+    <!-- Seção das listas -->
+    <h2>Categorias de Produtos</h2>
+
+    <!-- Lista não numerada com lista encadeada dentro -->
+    <h3>Departamentos </h3>
+    <ul>
+        <li>Futebol
+            <ul>
+                <li>Chuteiras</li>
+                <li>Bolas</li>
+                <li>Caneleiras</li>
+            </ul>
+        </li>
+        <li>Corrida
+            <ul>
+                <li>Tênis</li>
+                <li>Bermudas</li>
+            </ul>
+        </li>
+        <li>Academia
+            <ul>
+                <li>Halteres</li>
+                <li>Colchonetes</li>
+            </ul>
+        </li>
+    </ul>
+
+    <!-- Lista numerada -->
+    <h3>Mais Vendidos </h3>
+    <ol>
+        <li>Chuteira Campo</li>
+        <li>Tênis de Corrida</li>
+        <li>Bola de Futebol</li>
+        <li>Par de Halteres 5kg</li>
+    </ol>
+
+    <!-- Lista de definição -->
+    <h3>Termos Técnicos </h3>
+    <dl>
+        <dt>Dry-Fit</dt>
+        <dd>Tecido leve que ajuda a evaporar o suor mais rápido.</dd>
+
+        <dt>Solado EVA</dt>
+        <dd>Borracha macia usada na sola do tênis para amortecer impacto.</dd>
+    </dl>
+
+    <hr>
+
+    <!-- Seção da tabela principal -->
+    <h2>Tabela de Produtos</h2>
+
+    <!-- Atributos da tabela: largura, borda, espaçamento interno e externo -->
+    <table width="90%" border="1" cellpadding="8" cellspacing="0" align="center">
+        
+        <!-- Cabeçalho da tabela -->
+        <thead>
+            <tr bgcolor="#2e6f40">
+                <th width="15%">Categoria</th>
+                <th width="15%">Foto</th>
+                <th width="20%">Produto</th>
+                <th width="30%">Descrição</th>
+                <th width="10%">Estoque</th>
+                <th width="10%">Preço</th>
+            </tr>
+        </thead>
+
+        <!-- Corpo da tabela -->
+        <tbody>
+            <!-- Usando rowspan para juntar as duas linhas de Futebol -->
+            <tr>
+                <td rowspan="2" align="center" valign="middle" bgcolor="#e8f5e9"><b>Futebol</b></td>
+                <td align="center"><img src="img/chuteira.jpg" width="70" height="70" alt="Chuteira"></td>
+                <td align="left" valign="top">Chuteira Campo</td>
+                <td align="left" valign="middle">Chuteira com travas para grama natural, material sintético.</td>
+                <td align="center" valign="middle">Disponível</td>
+                <td align="right" valign="middle">R$ 299,90</td>
+            </tr>
+
+            <tr bgcolor="#f5f5f5">
+                <td align="center"><img src="img/bola.jpg" width="70" height="70" alt="Bola"></td>
+                <td align="left" valign="top">Bola Oficial</td>
+                <td align="left" valign="middle">Bola tamanho oficial de campo, costurada.</td>
+                <td align="center" valign="middle">Disponível</td>
+                <td align="right" valign="middle">R$ 150,00</td>
+            </tr>
+
+            <tr>
+                <td align="center" valign="middle" bgcolor="#e8f5e9"><b>Corrida</b></td>
+                <td align="center"><img src="img/tenis.jpg" width="70" height="70" alt="Tênis"></td>
+                <td align="left" valign="top">Tênis Running</td>
+                <td align="left" valign="middle">Tênis leve com amortecimento para corrida de rua.</td>
+                <td align="center" valign="middle">Poucas un.</td>
+                <td align="right" valign="middle">R$ 420,00</td>
+            </tr>
+
+            <tr bgcolor="#f5f5f5">
+                <td align="center" valign="middle" bgcolor="#e8f5e9"><b>Academia</b></td>
+                <td align="center"><img src="img/halteres.jpg" width="70" height="70" alt="Halteres"></td>
+                <td align="left" valign="top">Halteres 5kg</td>
+                <td align="left" valign="middle">Par de pesos de ferro revestidos com borracha.</td>
+                <td align="center" valign="middle">Esgotado</td>
+                <td align="right" valign="middle">R$ 110,00</td>
+            </tr>
+
+            <!-- Linha com colspan e imagem de fundo aplicada via CSS -->
+            <tr height="50" class="fundo-promo">
+                <td colspan="5" align="center" valign="middle"><b>PROMOÇÃO:</b> Kit Camiseta + Meião Esportivo</td>
+                <td align="right" valign="middle"><b>R$ 89,90</b></td>
+            </tr>
+        </tbody>
+
+        <!-- Rodapé da tabela com colspan -->
+        <tfoot>
+            <tr bgcolor="#dddddd">
+                <td colspan="5" align="right"><b>Total (1 item de cada):</b></td>
+                <td align="right"><b>R$ 1.069,80</b></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <br>
+
+    <!-- Tabela encadeada (tabela dentro de outra tabela) -->
+    <h2>Grade de Tamanhos </h2>
+
+    <table width="90%" border="1" cellpadding="6" cellspacing="0" align="center">
+        <thead>
+            <tr bgcolor="#2e6f40">
+                <th width="30%">Produto</th>
+                <th width="70%">Tamanhos Disponíveis</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td align="center" valign="middle">Tênis Running</td>
+                <td align="center">
+                    <!-- Tabela interna -->
+                    <table width="90%" border="1" cellpadding="4" cellspacing="2">
+                        <tr bgcolor="#c8e6c9">
+                            <th>Cor</th>
+                            <th>38</th>
+                            <th>39</th>
+                            <th>40</th>
+                            <th>41</th>
+                        </tr>
+                        <tr>
+                            <td>Branco/Laranja</td>
+                            <td align="center">Sim</td>
+                            <td align="center">Não</td>
+                            <td align="center">Sim</td>
+                            <td align="center">Sim</td>
+                        </tr>
+                        <tr>
+                            <td>Preto</td>
+                            <td align="center">Não</td>
+                            <td align="center">Sim</td>
+                            <td align="center">Sim</td>
+                            <td align="center">Não</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <hr>
+    <p align="center">Loja de Artigos Esportivos - 2026</p>
+
+</body>
